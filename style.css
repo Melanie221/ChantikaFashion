@@ -1,0 +1,465 @@
+*,html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* navbar */
+.container-navbar{
+    background-color: #F7EFE8;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    position: fixed;
+    transition: top 0.3s;
+}
+/* ketika di scroll */
+.container-navbar.scroll {
+    top: 0px;
+}
+.menu{
+    margin-left: -25rem;
+}
+.ul-menu{
+    display: flex;  
+}
+.li-menu{
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 2rem 5%;
+    padding: 1rem 2rem;
+}
+.menu .ul-menu .li-menu a{
+    color: black;
+}
+.menu .ul-menu .li-menu a:hover{
+    color: brown;
+}
+.logo{
+    margin:-55px 1%;
+}
+.user{
+    margin: 2rem 3%;
+}
+.user a i{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.user a .facebook{
+    background-color: rgb(24, 119, 242);
+    border-radius: 50px;
+    color:white;
+}
+.user a .instagram{
+    background-color: brown;
+    border-radius: 50px;
+    color:white;
+}
+.user a .account-circle{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.li-menu a, .user a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#hamburger-menu {
+    display: none;
+    color: #101010;
+}
+/* navbar end */
+/* content */
+/* session 1 */
+.container-content .session1 {
+    min-height: 100vh;
+    margin: 12vh 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff;
+}
+
+.container-content .session1 .content-s1 {
+    margin: 0 10%;
+}
+
+.container-content .session1 .content-s1 h2{
+    margin-bottom: 1rem;
+}
+
+.container-content .session1 .content-s2 {
+    height: 80vh;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.container-content .session1 .content-s2 .tulisan {
+    margin: 1rem -10rem;
+    background-color: aqua;
+    padding: 10rem 22rem;
+    background-image: url(image/modelpage1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* cta */
+
+
+.container-content .session1 .content-s2 .tombol .main-content {
+    margin-bottom: 15rem;
+    margin-top: 10rem;
+}
+
+.container-content .session1 .content-s2 .tombol .main-content h1 {
+    font-size: 5rem;
+    color: #735E59;
+}
+
+.container-content .session1 .content-s2 .tombol .cta{
+    margin-top: -10%;
+    background-color: white;
+    padding: 1rem 5rem;
+    text-decoration: none;
+    color: rgb(32, 3, 3);
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid #735E59;
+    position: absolute;
+}
+/* cta End */
+/* session 1 end */
+
+/* session 2 */
+.session2 {
+    margin: 10px 15px;
+    text-align: center;
+}
+
+.session2 .session2-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    margin: 0 5%;
+}
+
+.session2 .session2-container .session2-content1,
+.session2 .session2-container .session2-content2,
+.session2 .session2-container .session2-content3{
+    padding: 1px 1px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 1px 0;
+    transition: 0.2s ease;
+    position: relative;
+    height: 44rem;
+    width: 34rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.session2 .session2-container .session2-content1 {
+    background-image: url(image/model\ page\ 2-1.jpg);
+}
+
+.session2 .session2-container .session2-content2 {
+    background-image: url(image/tulisan\ page2.jpg);
+}
+
+.session2 .session2-container .session2-content3 {
+    background-image: url(image/model\ page\ 2-2.jpg);
+}
+/* session 2 end */
+
+/* session 3 */
+.session3 {
+    margin-top: 5rem;
+}
+
+.session3 .session3-container {
+    margin: 1px 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.session3 .session3-container div {
+    margin-bottom: 20rem;
+}
+
+.session3 .session3-container .session3-content1 .foto-model{
+    padding: 20rem 20rem;
+    background-image: url(image/model\ page\ 3.jpg);
+}
+
+
+
+.session3 .session3-container .session3-content2 img{
+    margin-bottom: 5rem;
+    width: 55rem;
+}
+
+.session3 .session3-container .session3-content2 h1{
+    margin-bottom: 2rem;
+}
+/* session 3 end */
+
+/* contact us */
+.contact{
+    padding: 10rem 7% 1.4rem;
+}
+    
+.contact h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+}
+
+.contact .row .map {
+    margin: 5%;
+    flex: 1 1 45rem; 
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 1px solid #eee;
+    padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    background: none;
+    color: black;
+}
+
+.contact .row form .btn{
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #101010;
+    cursor: pointer;
+}
+/* contact us end */
+/* content end*/
+/* footer */
+/* FOOTER */
+
+footer {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 2rem;
+}
+
+footer .ul-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .ul-footer .li-footer {
+    list-style-type: none;
+    padding: 10px;
+}
+
+footer .ul-footer .li-footer a,
+footer .credit,
+footer .credit a {
+    text-decoration: none;
+    color: #101010;
+    font-weight: 700;
+}
+
+footer a i{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+footer a .facebook{
+    background-color: rgb(24, 119, 242);
+    border-radius: 50px;
+    color:white;
+}
+footer a .instagram{
+    background-color: brown;
+    border-radius: 50px;
+    color:white;
+}
+footer a .tiktok{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
+
+footer .ul-footer .li-footer a:hover,
+footer .credit a:hover {
+    color: #444;
+}
+
+footer .social {
+    padding: 1rem 0;
+}
+/* FOOTER END */
+/* footer end */
+/* Media Queries */
+/* Laptop */
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+
+    /* Sidebar */
+    .container-navbar .menu .ul-menu{
+        display: block;
+    }
+
+    .container-navbar .menu .ul-menu .li-menu a {
+        color: #010101;
+    }
+
+    .container-navbar .menu .ul-menu .li-menu a:hover {
+        color: goldenrod;
+    }
+    
+    .container-navbar .menu .ul-menu .li-menu a::after {
+        content: '';
+        padding-bottom: 0.5rem;
+        border-bottom: 0.2rem solid goldenrod;
+        transform: scale(0);
+        transition: 0.2s linear;
+    }
+    
+    .container-navbar .menu .ul-menu .li-menu a:hover::after {
+        transform: scale(1);
+    }
+
+    .menu {
+        position: absolute;
+        top: 3;
+        right: -100%;
+        background-color: #fff;
+        width: 40rem;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .menu.active{
+        right: 0%;
+        top: 3rem;
+        transition: .4s;
+    }
+
+    .menu .ul-menu {
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    /* Sidebar End */
+    
+    .user{
+        margin: 3rem 3%;
+    }
+    /* session 1 */
+    .container-content .session1{
+        margin: 1rem -10rem;
+        padding: 10rem 12rem;
+        background-image: url(image/modelpage1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-content .session1 .content-s1 hr,
+    .container-content .session1 .content-s1 h2{
+        display: none;
+    }
+
+    .container-content .session1 .content-s2 {
+        display:inline;
+        height: max-content;
+    }
+
+    .container-content .session1 .content-s2 .tulisan {
+        display: none;
+    }
+    /* session 1 end */
+
+
+    /* session 2 */
+    .session2 {
+        margin: 10px 20%;
+        text-align: center;
+    }
+    /* session 2 end */
+
+    /* contact */
+    .contact .row {
+        flex-wrap: wrap;
+    }
+    /* contact end */
+    
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+
+    
+
+}
+/* Media Queries End */
+

@@ -1,0 +1,232 @@
+*,html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+/* navbar */
+.container-navbar{
+    background-color: whitesmoke;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    position: fixed;
+    transition: top 0.3s;
+}
+.menu{
+    margin-left: -25rem;
+}
+.ul-menu{
+    display: flex;  
+}
+.li-menu{
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 2rem 5%;
+    padding: 1rem 2rem;
+}
+.menu .ul-menu .li-menu a{
+    color: black;
+}
+.menu .ul-menu .li-menu a:hover{
+    color: brown;
+}
+.logo{
+    margin:-55px 1%;
+}
+.user{
+    margin: 2rem 3%;
+}
+.user a i{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.user a .facebook{
+    background-color: rgb(24, 119, 242);
+    border-radius: 50px;
+    color:white;
+}
+.user a .instagram{
+    background-color: brown;
+    border-radius: 50px;
+    color:white;
+}
+.user a .account-circle{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.li-menu a, .user a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#hamburger-menu {
+    display: none;
+    color: #101010;
+}
+/* navbar end */
+/* content*/
+/* blog */
+.container-content .blog{
+    margin: 15vh 5% 2rem;
+}
+.container-content .blog h2{
+    margin-bottom: 1rem;
+}
+
+.container-content .blog .ol-blog .img-blog{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 20rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* content end */
+/* footer */
+/* FOOTER */
+
+footer {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 2rem;
+}
+
+footer .ul-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .ul-footer .li-footer {
+    list-style-type: none;
+    padding: 10px;
+}
+
+footer .ul-footer .li-footer a,
+footer .credit,
+footer .credit a {
+    text-decoration: none;
+    color: #101010;
+    font-weight: 700;
+}
+
+footer a i{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+footer a .facebook{
+    background-color: rgb(24, 119, 242);
+    border-radius: 50px;
+    color:white;
+}
+footer a .instagram{
+    background-color: brown;
+    border-radius: 50px;
+    color:white;
+}
+footer a .tiktok{
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+}
+
+footer .ul-footer .li-footer a:hover,
+footer .credit a:hover {
+    color: #444;
+}
+
+footer .social {
+    padding: 1rem 0;
+}
+/* FOOTER END */
+/* footer end */
+/* Media Queries */
+/* Laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* Tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+
+    /* Sidebar */
+    .container-navbar .menu .ul-menu{
+        display: block;
+    }
+
+    .container-navbar .menu .ul-menu .li-menu a {
+        color: #010101;
+    }
+
+    .container-navbar .menu .ul-menu .li-menu a:hover {
+        color: goldenrod;
+    }
+    
+    .container-navbar .menu .ul-menu .li-menu a::after {
+        content: '';
+        padding-bottom: 0.5rem;
+        border-bottom: 0.2rem solid goldenrod;
+        transform: scale(0);
+        transition: 0.2s linear;
+    }
+    
+    .container-navbar .menu .ul-menu .li-menu a:hover::after {
+        transform: scale(1);
+    }
+
+    .menu {
+        position: absolute;
+        top: 3;
+        right: -100%;
+        background-color: #fff;
+        width: 40rem;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .menu.active{
+        right: 0%;
+        top: 3rem;
+        transition: .4s;
+    }
+
+    .menu .ul-menu {
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    /* Sidebar End */
+    
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
+/* Media Queries End */
+
